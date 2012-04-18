@@ -1,0 +1,12 @@
+/* 
+    Document   : style.css
+    Created on : 01.02.2012, 14:34:12
+    Author     : peterliebetrau
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Hide edit form on "Manage Textdomains" screen */
+#tseditform{
+	display:none;
+}

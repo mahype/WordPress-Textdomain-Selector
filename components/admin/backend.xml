@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<wml>
+	<menu title="Textdomains" icon="../wp-content/plugins/seopress/includes/images/icon-tsplugin-16x16.png" slug="textdomains">
+		<page title="Textdomains" headline="Textdomains verwalten">
+
+			<form name="tsnewform" id="tseditform">
+				<p id="tseditnote"></p>
+				<textfield name="textdomain" id="edit_textdomain" label="Textdomain" readonly="readonly" />
+				<textarea name="description" label="Beschreibung" />
+				<file name="mofile" label=".mo-Datei" tooltip=".mo Datei hochladen" />
+				<button name="Speichern" />
+			</form>
+		</page>
+
+		<page title="Neue Textdomain" headline="Neue Textdomain" slug="new_textdomain">
+			<p>Wählen Sie die .mo Datei aus und geben Sie den Namen der Textdomain und die Beschreibung ein.</p>
+			<p>Der Name der Textdomain sollte dem Dateinamen der .mo Datei ohne die Dateiendung entsprechen.</p>
+			<p>Beispiel: Dateiname = meinplugin-de_DE.mo Textdomain = meinplugin-de_DE</p>
+			<form name="tsnewform" id="tsnewform">w
+				<select name="textdomain" id="new_textdomain" label="Textdomain">
+					<option name="Textdomain auswählen" value="choose_textdomain" />
+				</select>
+				<textarea name="description" label="Beschreibung" />
+				<file name="mofile" label=".mo-Datei" tooltip=".mo Datei hochladen" />
+				<button name="Speichern" />
+			</form>
+		</page>
+	</menu>
+</wml>
